@@ -107,11 +107,16 @@ $ sudo docker-compose up -d
 
 # check whether containers are deployed successfully or not, and it is running on which port
 $ docker ps
+
+# get the container id of mysql container and run the following command to create database schema and tables
+$ docker exec -it <mysql container id> sh /tmp/mysql/run.sh
 ```
 
 Step 8.
-Open web browser and test 
+Open web browser and test using your docker host ip
 
-eg: x.x.x.x:8081
+eg: x.x.x.x/app1/
+eg: x.x.x.x/app2/
+
 
 That's it. Thank you.
