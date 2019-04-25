@@ -1,4 +1,4 @@
-# DevOps Training Example  [![Build Status](build)](passing) [![GitHub version](version)](1.0.0)
+# DevOps Training Example : Bhutan
 
 This is a Docker example running Nginx, PHP, Composer and MySQL.
 
