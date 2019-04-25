@@ -116,6 +116,7 @@ Step 8.
 Open web browser and test using your docker host ip
 
 eg: x.x.x.x/app1/
+
 eg: x.x.x.x/app2/
 
 
