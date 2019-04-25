@@ -108,8 +108,8 @@ $ sudo docker-compose up -d
 # check whether containers are deployed successfully or not, and it is running on which port
 $ docker ps
 
-# get the container id of mysql container and run the following command to create database schema and tables
-$ docker exec -it <mysql container id> sh /tmp/mysql/run.sh
+# run the following command to create database schema and tables
+$ docker-compose exec db sh /tmp/mysql/run.sh
 ```
 
 Step 8.
