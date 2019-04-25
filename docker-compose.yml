@@ -1,19 +1,27 @@
-version: '3.0'
+web:
+    image: nginx:latest
+    ports:
+        - "80:80"
+    volumes:
+        - ./:/var/www
+        - ./site.conf:/etc/nginx/conf.d/site.conf
+    links:
+        - php
+php:
+    image: nanoninja/php-fpm:latest
+    volumes:
+        - ./:/var/www
+    links:
+        - db
 
-services:
-    php:
-        image: nanoninja/php-fpm:latest
-        volumes:
-            - ./html:/var/www/html
-        links:
-            - db
-            
-    db:
-        image: mysql:5.7
-        volumes:
-         - /var/lib/mysql
-        environment:
-         - MYSQL_ROOT_PASSWORD=123456
-         - MYSQL_DATABASE=database
-        ports:
-         - "3306:3306"
+db:
+    image: mysql:5.7
+    volumes:
+     - /var/lib/mysql
+     - ./mysql:/tmp/mysql
+    environment:
+     - MYSQL_ROOT_PASSWORD=123456
+     - MYSQL_DATABASE=database
+    ports:
+     - "3306:3306"
+

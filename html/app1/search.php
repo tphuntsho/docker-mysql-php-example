@@ -2,11 +2,11 @@
 // (1) CONNECT DATABASE
 // ! CHANGE THESE TO YOUR OWN !
 
-define('DB_HOST', 'localhost');
-define('DB_NAME', 'demo_user_db');
+define('DB_HOST', 'db');
+define('DB_NAME', 'database');
 define('DB_CHARSET', 'utf8');
 define('DB_USER', 'root');
-define('DB_PASSWORD', '');
+define('DB_PASSWORD', '123456');
 
 try {
   $pdo = new PDO(

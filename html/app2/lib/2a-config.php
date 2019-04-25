@@ -1,11 +1,11 @@
 <?php
 /* [DATABASE SETTINGS] */
 // ! CHANGE THESE TO YOUR OWN !
-define('DB_HOST', 'localhost');
-define('DB_NAME', 'test');
+define('DB_HOST', 'db');
+define('DB_NAME', 'shopdb');
 define('DB_CHARSET', 'utf8');
 define('DB_USER', 'root');
-define('DB_PASSWORD', '');
+define('DB_PASSWORD', '123456');
 
 /* [MUTE NOTIFICATIONS] */
 error_reporting(E_ALL & ~E_NOTICE);
